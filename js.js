@@ -1,11 +1,19 @@
+  
+let iterations=4
+  let str='024135'
+  let letterF=''
+  let letterS=''
+  let strMod
+  for(let it=0;it<iterations;it+=1){
+  for(let i = 1, j=0;j<str.length;i+=2,j+=2){
+    strMod='';
+    letterF+=str[i];
+    letterS+=str[j];
+  }
+  strMod=letterF+letterS;
+  console.log(strMod)
+}
 
-num=29
 
 
-const ones=['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'];
-const tens=['', 'X', 'XX', 'XXX'];
-
-let result=''+tens[Math.floor(num/10)]+ones[num%10]
-console.log(tens[Math.floor(num/10)])
-
-console.log(result)
+  
