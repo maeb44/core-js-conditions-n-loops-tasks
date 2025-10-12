@@ -146,18 +146,20 @@ function convertToRomanNumerals(num) {
  *  '1950.2'  => 'one nine five zero point two'
  */
 function convertNumberToString(numberStr) {
-  const ones = [
-    'zero',
-    'one',
-    'two',
-    'three',
-    'four',
-    'five',
-    'six',
-    'seven',
-    'eight',
-    'nine',
-  ];
+const ones = {
+    0:'zero',
+    1:'one',
+    2:'two',
+    3:'three',
+    4:'four',
+    5:'five',
+    6:'six',
+    7:'seven',
+    8:'eight',
+    9:'nine',
+    dote :'.',
+    minus:"-"
+};
   for (let i = 0; i <= numberStr.length; i += 1) {
     ones;
   }
